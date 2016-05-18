@@ -1,6 +1,7 @@
 """This module exports the OneScriptLint plugin class."""
 
 import sublime
+import os
 from SublimeLinter.lint import Linter, util
 
 class OneScriptLint(Linter):
@@ -17,20 +18,20 @@ class OneScriptLint(Linter):
         linterEntryPoint = sublime.load_settings('Language 1C (BSL).sublime-settings').get('linterEntryPoint')
         filePath = self.filename
         arrFilePath = filePath.split('.')
-        if arrFilePath.length == 0:
+        if len(arrFilePath) == 0:
             return
-        extension = arrFilePath[arrFilePath.length - 1];
-        if not extension = 'os' and not lintOtherExtensions.find(extension) == -1:
+        extension = arrFilePath[len(arrFilePath) - 1];
+        if not extension == 'os' and not lintOtherExtensions.find(extension) == -1:
             return
 
         if not linterEntryPoint == '':
             project_path = ''
             projectPaths = sublime.active_window().folders()
             for projectPath in projectPaths:
-                if filePath.indexOf(projectPath) > -1:
+                if filePath.find(projectPath) > -1:
                     project_path = projectPath;
                     break
 
-            cmd = cmd + " -env=" + project_path + os.path.sep + linterEntryPoint
+            cmd.append("-env=" + os.path.join(project_path, linterEntryPoint))
         
         return self.communicate(cmd, code)
