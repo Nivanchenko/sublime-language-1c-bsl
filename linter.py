@@ -21,7 +21,7 @@ class OneScriptLint(Linter):
         if len(arrFilePath) == 0:
             return
         extension = arrFilePath[len(arrFilePath) - 1];
-        if not extension == 'os' and not lintOtherExtensions.find(extension) == -1:
+        if not extension == 'os' and lintOtherExtensions.find(extension) == -1:
             return
 
         if not linterEntryPoint == '':
