@@ -4,11 +4,21 @@ import sublime
 import os
 from SublimeLinter.lint import Linter, util
 
+def getCommandId():
+    onescriptPath = sublime.load_settings('Language 1C (BSL).sublime-settings').get('onescriptPath')
+    if not onescriptPath or len(onescriptPath) == 0:
+        command = 'oscript'
+    else:
+        command = onescriptPath
+
+    return command
+
 class OneScriptLint(Linter):
     """Provides an interface to OneScriptLint."""
 
     syntax = '1c'
-    cmd = ('oscript -encoding=utf-8 -check @')
+    cmd_string = getCommandId() + ' -encoding=utf-8 -check @'
+    cmd = (cmd_string)
     regex = r'\{\S+\s+(?P<error>.*)\s\/\s.*:\s+(?P<line>\d+)\s+\/\s+(?P<message>.*)\}'
     error_stream = util.STREAM_BOTH
     comment_re = r'\s*//'
