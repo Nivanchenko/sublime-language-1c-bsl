@@ -781,6 +781,13 @@
     "CommonSettingsStorage",
     "DynamicListsUserSettingsStorage",
     "ReportsUserSettingsStorage",
-    "SystemSettingsStorage"
+    "SystemSettingsStorage",
+    "ВстроенныеПокупки",
+    "InAppPurchases",
+    "ОтображениеРекламы",
+    "AdRepresentationПанельЗадачОС",
+    "OSTaskbar",
+    "ПроверкаВстроенныхПокупок",
+    "InAppPurchasesValidation"
   ]
 }
