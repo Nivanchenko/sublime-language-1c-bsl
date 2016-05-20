@@ -19,6 +19,11 @@
           "key": "selector",
           "operator": "equal",
           "operand": "source.bsl"
+        },
+        {
+          "key": "auto_complete_visible",
+          "operator": "equal",
+          "operand": false
         }
       ]
   },
@@ -42,6 +47,11 @@
           "key": "selector",
           "operator": "equal",
           "operand": "source.bsl"
+        },
+        {
+          "key": "auto_complete_visible",
+          "operator": "equal",
+          "operand": false
         }
       ]
   }

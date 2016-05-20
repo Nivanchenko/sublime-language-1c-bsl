@@ -1,5 +1,7 @@
 {
   "tab_size": 4,
   "translate_tabs_to_spaces": false,
-  "lintBSLFiles": false
+  "onescriptPath": "",
+  "lintOtherExtensions": "",
+  "linterEntryPoint": ""
 }
