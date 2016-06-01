@@ -5,6 +5,10 @@
     "selector": "source.bsl",
     "variants": [
         {
+            "name": "Check",
+            "cmd": ["oscript", "-encoding=utf-8", "-check", "$file"]
+        },
+        {
             "name": "Compile",
             "cmd": ["oscript", "-encoding=utf-8", "-compile", "$file"]
         },
