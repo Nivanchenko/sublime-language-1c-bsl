@@ -54,5 +54,25 @@
           "operand": false
         }
       ]
+  },
+  {
+    "keys": [
+      "tab"
+    ],
+    "command": "expand_abbreviation",
+    "context":
+      [
+        {
+          "key": "selection_empty",
+          "operator": "equal",
+          "operand": true,
+          "match_all": false
+        },
+        {
+          "key": "selector",
+          "operator": "equal",
+          "operand": "source.bsl"
+        }
+      ]
   }
 ]
