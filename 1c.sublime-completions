@@ -788,6 +788,24 @@
     "AdRepresentationПанельЗадачОС",
     "OSTaskbar",
     "ПроверкаВстроенныхПокупок",
-    "InAppPurchasesValidation"
+    "InAppPurchasesValidation",
+    "КаталогБиблиотекиМобильногоУстройства",
+    "MobileDeviceLibraryDir",
+    "НачатьСозданиеДвоичныхДанныхИзФайла",
+    "BeginCreateBinaryDataFromFile",
+    "ПолучитьОтключениеБезопасногоРежима",
+    "GetSafeModeDisabled",
+    "ПродолжитьВызов",
+    "ProceedWithCall",
+    "СоединитьБуферыДвоичныхДанных",
+    "ConcatBinaryDataBuffers",
+    "УстановитьОтключениеБезопасногоРежима",
+    "SetSafeModeDisabled",
+    "ИнформацияОбИнтернетСоединении",
+    "InternetConnectionInformation",
+    "СредстваОтображенияРекламы",
+    "AdvertisingPresentationTools",
+    "ФайловыеПотоки",
+    "FileStreams"
   ]
 }
